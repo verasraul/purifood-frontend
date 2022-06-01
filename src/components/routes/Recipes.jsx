@@ -8,7 +8,7 @@ const Recipes = () => {
 
   const fetchData = async () => {
     try {
-      const res = await axios(`http://localhost:3001/recipes`);
+      const res = await axios(`https://purifood-backend.herokuapp.com/recipes`);
       setRecipes(res.data.MyRecipes);
     } catch (err) {
       console.log(err);

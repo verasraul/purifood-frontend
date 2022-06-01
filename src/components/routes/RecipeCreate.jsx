@@ -22,7 +22,7 @@ const RecipeCreate = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios({
-      url: `http://localhost:3001/recipes/create-recipe`,
+      url: `https://purifood-backend.herokuapp.com/recipes/create-recipe`,
       method: "POST",
       data: recipe,
     })
