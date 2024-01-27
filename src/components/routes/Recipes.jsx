@@ -8,7 +8,7 @@ const Recipes = () => {
 
   const fetchData = async () => {
     try {
-      const res = await axios(`http://localhost:8000/recipes`);
+      const res = await axios(`http://localhost:3001/recipes`);
       setRecipes(res.data.MyRecipes);
     } catch (err) {
       console.log(err);

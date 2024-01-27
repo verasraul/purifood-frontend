@@ -11,7 +11,7 @@ function Recipe() {
 
   const fetchData = async () => {
     try {
-      const response = await axios(`http://localhost:3000/api/recipes/${id}`);
+      const response = await axios(`http://localhost:3001/api/recipes/${id}`);
       console.log(response);
       const result = response.data.selectedRecipe;
       setRecipe(result);
@@ -26,7 +26,7 @@ function Recipe() {
 
   const destroy = () => {
     axios({
-      url: `http://localhost:8000/recipes/${id}`,
+      url: `http://localhost:3001/recipes/${id}`,
       method: "DELETE",
     })
       .then(() => setDeleted(true))
