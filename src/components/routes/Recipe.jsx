@@ -42,7 +42,7 @@ function Recipe() {
     <Layout>
       <div className="recipe-post-container">
         <h1>{recipe.recipeName}</h1>
-        <img src={recipe.recipeImage}></img>
+        <img className="recipeTile-image" src={recipe.recipeImage} alt="cooked-recipe"></img>
         <p>{recipe.ingredients}</p>
         <div className="recipe-buttons">
           <NavLink to={`/recipes/${id}/update-recipe`} className="button">
